@@ -2,7 +2,7 @@ namespace Windchill
 {
     public class Weather
     {
-        private int Temperature;
+        private int Temperature = 0;
         private int WindSpeed;
         private int Humidity;
 
