@@ -50,14 +50,14 @@ namespace Windchill
         
         public static Weather FindWeatherWithLargestWindchill(Weather[] weather)
         {
-            Weather weatherWithLargestWindchill = weather[0];
+            Weather WeatherWithLargestWindchill = weather[0];
             for (int i = 1; i < weather.Length; ++i)
             {
-                if (weather[i].CalculateWindChill() > weatherWithLargestWindchill.CalculateWindChill())
-                    weatherWithLargestWindchill = weather[i];
+                if (weather[i].CalculateWindChill() > WeatherWithLargestWindchill.CalculateWindChill())
+                    WeatherWithLargestWindchill = weather[i];
             }
 
-            return weatherWithLargestWindchill;
+            return WeatherWithLargestWindchill;
         }
     }
 }
