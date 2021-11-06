@@ -1,0 +1,16 @@
+/home/seki/Documents/FAKS/OOP/Zadace/DZ1/Windchill/bin/Debug/net5.0/Windchill
+/home/seki/Documents/FAKS/OOP/Zadace/DZ1/Windchill/bin/Debug/net5.0/Windchill.deps.json
+/home/seki/Documents/FAKS/OOP/Zadace/DZ1/Windchill/bin/Debug/net5.0/Windchill.runtimeconfig.json
+/home/seki/Documents/FAKS/OOP/Zadace/DZ1/Windchill/bin/Debug/net5.0/Windchill.runtimeconfig.dev.json
+/home/seki/Documents/FAKS/OOP/Zadace/DZ1/Windchill/bin/Debug/net5.0/Windchill.dll
+/home/seki/Documents/FAKS/OOP/Zadace/DZ1/Windchill/bin/Debug/net5.0/ref/Windchill.dll
+/home/seki/Documents/FAKS/OOP/Zadace/DZ1/Windchill/bin/Debug/net5.0/Windchill.pdb
+/home/seki/Documents/FAKS/OOP/Zadace/DZ1/Windchill/obj/Debug/net5.0/Windchill.csproj.AssemblyReference.cache
+/home/seki/Documents/FAKS/OOP/Zadace/DZ1/Windchill/obj/Debug/net5.0/Windchill.GeneratedMSBuildEditorConfig.editorconfig
+/home/seki/Documents/FAKS/OOP/Zadace/DZ1/Windchill/obj/Debug/net5.0/Windchill.AssemblyInfoInputs.cache
+/home/seki/Documents/FAKS/OOP/Zadace/DZ1/Windchill/obj/Debug/net5.0/Windchill.AssemblyInfo.cs
+/home/seki/Documents/FAKS/OOP/Zadace/DZ1/Windchill/obj/Debug/net5.0/Windchill.csproj.CoreCompileInputs.cache
+/home/seki/Documents/FAKS/OOP/Zadace/DZ1/Windchill/obj/Debug/net5.0/Windchill.dll
+/home/seki/Documents/FAKS/OOP/Zadace/DZ1/Windchill/obj/Debug/net5.0/ref/Windchill.dll
+/home/seki/Documents/FAKS/OOP/Zadace/DZ1/Windchill/obj/Debug/net5.0/Windchill.pdb
+/home/seki/Documents/FAKS/OOP/Zadace/DZ1/Windchill/obj/Debug/net5.0/Windchill.genruntimeconfig.cache

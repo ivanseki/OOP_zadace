@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/home/seki/.dotnet/store/|arch|/|tfm|",
+      "/home/seki/.nuget/packages"
+    ]
+  }
+}
