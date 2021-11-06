@@ -34,6 +34,7 @@ namespace Windchill
             double[] windSpeeds = new double[Count] { 4.81, 1.5, 5.7, 4.9, 1.2 };
 
             Weather[] weathers = new Weather[Count];
+            
             for (int i = 0; i < weathers.Length; i++)
             {
                 weathers[i] = new Weather(temperatures[i], humidities[i], windSpeeds[i]);
@@ -51,6 +52,7 @@ namespace Windchill
         public static Weather FindWeatherWithLargestWindchill(Weather[] weather)
         {
             Weather WeatherWithLargestWindchill = weather[0];
+            
             for (int i = 1; i < weather.Length; ++i)
             {
                 if (weather[i].CalculateWindChill() > WeatherWithLargestWindchill.CalculateWindChill())

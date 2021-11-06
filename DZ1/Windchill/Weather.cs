@@ -62,7 +62,7 @@ namespace Windchill
                     + (-0.000003582 * Math.Pow(Temperature, 2) * Math.Pow(Humidity, 2))
                     );
         }
-
+        
         public double CalculateWindChill()
         {
             if (Temperature <= 10 && WindSpeed > 4.8)
