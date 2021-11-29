@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace Windchill
 {
@@ -42,25 +43,12 @@ namespace Windchill
                 Console.WriteLine("Windchill for weathers[" + i + "] is: " + weathers[i].CalculateWindChill());
             }
             
-            Weather largestWindchill = FindWeatherWithLargestWindchill(weathers);
+            Weather largestWindchill = ForecastUtilities.FindWeatherWithLargestWindchill(weathers);
 
             Console.WriteLine(
                 "Weather info:" + largestWindchill.GetTemperature() + ", " +
                 largestWindchill.GetHumidity() + ", " + largestWindchill.GetWindSpeed()
             );
-        }
-        
-        public static Weather FindWeatherWithLargestWindchill(Weather[] weather)
-        {
-            Weather WeatherWithLargestWindchill = weather[0];
-            
-            for (int i = 1; i < weather.Length; ++i)
-            {
-                if (weather[i].CalculateWindChill() > WeatherWithLargestWindchill.CalculateWindChill())
-                    WeatherWithLargestWindchill = weather[i];
-            }
-
-            return WeatherWithLargestWindchill;
         }
         
         private static void RunDemoForHW2()
@@ -74,7 +62,7 @@ namespace Windchill
 
             // Assume a valid input file (correct format).
             // Assume that the number of rows in the text file is always 7. 
-            string fileName = "weather.forecast";
+            string fileName = "/home/seki/Documents/FAKS/OOP/Zadace/DZ1/Windchill/weatherforecast";
             if (File.Exists(fileName) == false)
             {
                 Console.WriteLine("The required file does not exist. Please create it, or change the path.");
@@ -91,7 +79,7 @@ namespace Windchill
             Console.WriteLine(weeklyForecast.GetAsString());
             Console.WriteLine("Maximal weekly temperature:");
             Console.WriteLine(weeklyForecast.GetMaxTemperature());
-            Console.WriteLine(weeklyForecast[0].GetAsString());
+            Console.WriteLine(dailyForecasts[0].GetAsString());
         }
     }
 }

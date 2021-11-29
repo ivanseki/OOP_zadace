@@ -1,5 +1,4 @@
 using System;
-using System.Runtime.CompilerServices;
 
 namespace Windchill
 {
@@ -74,6 +73,11 @@ namespace Windchill
             {
                 return 0;
             }
+        }
+
+        public string GetAsString()
+        {
+            return $"T={this.Temperature}°C, w={this.WindSpeed}km/h, h={this.Humidity}%";
         }
     }
 }
