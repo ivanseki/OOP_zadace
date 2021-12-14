@@ -9,12 +9,12 @@ namespace Windchill
             this.weeklyForecast = weeklyforecast;
         }
 
-        public string GetAsString()
+        public override string ToString()
         {
             string temp = "";
             for(int i = 0; i < weeklyForecast.Length; ++i)
             {
-                temp += weeklyForecast[i].GetAsString() + "\n";
+                temp += weeklyForecast[i].ToString() + "\n";
             }
             
             return temp;

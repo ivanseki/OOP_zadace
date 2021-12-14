@@ -75,7 +75,7 @@ namespace Windchill
             }
         }
 
-        public string GetAsString()
+        public override string ToString()
         {
             return $"T={this.Temperature}°C, w={this.WindSpeed}km/h, h={this.Humidity}%";
         }

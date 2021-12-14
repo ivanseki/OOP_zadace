@@ -13,9 +13,9 @@ namespace Windchill
             this.Weather = weather;
         }
 
-        public string GetAsString()
+        public override string ToString()
         {
-            return $"{Day.ToString()}: {Weather.GetAsString()}";
+            return $"{Day.ToString()}: {Weather.ToString()}";
         }
 
     }
