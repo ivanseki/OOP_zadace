@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using System.Threading.Channels;
 
@@ -19,7 +20,8 @@ namespace Windchill
 
         public void Print(Weather weather)
         {
-            File.WriteAllTextAsync(fileName, weather.ToString());
+            using StreamWriter file = new StreamWriter(fileName, append: true);
+            file.WriteLine(weather.ToString());
         }
     }
 }

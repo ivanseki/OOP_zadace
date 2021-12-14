@@ -117,7 +117,14 @@ namespace Windchill
             {
                 new ConsolePrinter(ConsoleColor.DarkYellow),
                 new FilePrinter("/home/seki/Documents/FAKS/OOP/Zadace/DZ1/Windchill/uniformWeathers.txt"),
-            };	
+            };
+            
+            // Ovo je dodano ovdje jer metoda Print u FilePrinter-u radi tako da dodaje (append-a) stringove
+            // te je zato potrebno isprazniti datoteku svakim pokretanjem programa, jedino ako se baš želi
+            // dodavati neograničeno stringova s opisima vremenskih prognoza kako bi ih bilo više u datoteci.
+            // Također kod s ovakvom funkcionalnošću je dodan i kod zapisivanja u datoteku winterWeathers.txt.
+            File.WriteAllText("/home/seki/Documents/FAKS/OOP/Zadace/DZ1/Windchill/uniformWeathers.txt", String.Empty);
+            
             ForecastUtilities.PrintWeathers(uniformPrinters, uniformWeathers);
 
             IPrinter[] winterPrinters = new IPrinter[]
@@ -125,6 +132,8 @@ namespace Windchill
                 new ConsolePrinter(ConsoleColor.Green),
                 new FilePrinter("/home/seki/Documents/FAKS/OOP/Zadace/DZ1/Windchill/winterWeathers.txt"),
             };
+
+            File.WriteAllText("/home/seki/Documents/FAKS/OOP/Zadace/DZ1/Windchill/winterWeathers.txt", String.Empty);
             ForecastUtilities.PrintWeathers(winterPrinters, winterWeathers);
         }	
     }
