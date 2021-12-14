@@ -116,14 +116,14 @@ namespace Windchill
             IPrinter[] uniformPrinters = new IPrinter[]
             {
                 new ConsolePrinter(ConsoleColor.DarkYellow),
-                new FilePrinter(@"uniformWeathers.txt"),
+                new FilePrinter("/home/seki/Documents/FAKS/OOP/Zadace/DZ1/Windchill/uniformWeathers.txt"),
             };	
             ForecastUtilities.PrintWeathers(uniformPrinters, uniformWeathers);
 
             IPrinter[] winterPrinters = new IPrinter[]
             {
                 new ConsolePrinter(ConsoleColor.Green),
-                new FilePrinter(@"winterWeathers.txt"),
+                new FilePrinter("/home/seki/Documents/FAKS/OOP/Zadace/DZ1/Windchill/winterWeathers.txt"),
             };
             ForecastUtilities.PrintWeathers(winterPrinters, winterWeathers);
         }	
