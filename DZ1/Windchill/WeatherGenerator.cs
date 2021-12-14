@@ -5,14 +5,19 @@ namespace Windchill
 {
     public class WeatherGenerator
     {
-        public double MinTemperature { get; private set; }
-        public double MaxTemperature { get; private set; }
-        public double MinHumidity { get; private set; }
-        public double MaxHumidity { get; private set; }
-        public double MinWindSpeed { get; private set; }
-        public double MaxWindSpeed { get; private set; }
-        public IRandomGenerator Generator {get; private set; }
-        
+        private double MinTemperature;
+        private double MaxTemperature;
+        private double MinHumidity;
+        private double MaxHumidity;
+        private double MinWindSpeed;
+        private double MaxWindSpeed;
+        private IRandomGenerator Generator;
+
+        public void SetGenerator(IRandomGenerator generator)
+        {
+            this.Generator = generator;
+        }
+
         public WeatherGenerator(double minTemperature, double maxTemperature,
                                 double minHumidity, double maxHumidity, 
                                 double minWindSpeed, double maxWindSpeed, 
