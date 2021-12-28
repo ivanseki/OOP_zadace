@@ -50,6 +50,14 @@ namespace Windchill
             this.forecasts.Sort((x, y) => x.Day.Date.CompareTo(y.Day.Date));
         }
 
+        public void Remove(DateTime date)
+        {
+            if (!forecasts.Any(f => f.Day.Date == date.Date))
+                throw new NoSuchDailyWeatherException($"No daily forecast for {date.Date}");
+
+            this.forecasts.RemoveAll(f => f.Day.Date == date.Date);
+        }
+
         public override string ToString()
         {
             return string.Join(Environment.NewLine, forecasts);

@@ -171,18 +171,19 @@ namespace Windchill
             };
             repository.Add(forecasts);
             Console.WriteLine($"Current state of repository:{Environment.NewLine}{repository}");
-/*
+
             // Removing forecasts based on date:
             try
             {
                 repository.Remove(DateTime.Now);
                 repository.Remove(DateTime.Now.AddDays(100));
             }
-            catch(NoSuchDailyWeatherException exception) 
+            catch(NoSuchDailyWeatherException exception)
             {
                 Console.WriteLine(exception.Message);
             }
             Console.WriteLine($"Current state of repository:{Environment.NewLine}{repository}");
+
 
             // Iterating over a custom object:
             Console.WriteLine("Temperatures:");
@@ -190,7 +191,7 @@ namespace Windchill
             {
                 Console.WriteLine($"-> {dailyForecast.Weather.GetTemperature()}");
             }
-
+/*
             // Deep clone:
             DailyForecastRepository copy = new DailyForecastRepository(repository);
             Console.WriteLine($"Original repository:{Environment.NewLine}{repository}");
@@ -201,7 +202,7 @@ namespace Windchill
             
             Console.WriteLine($"Original repository:{Environment.NewLine}{repository}");
             Console.WriteLine($"Cloned repository:{Environment.NewLine}{copy}");
-            */
+*/
         }
     }
 }
