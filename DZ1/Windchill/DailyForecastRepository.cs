@@ -1,12 +1,26 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata;
+using System.Xml.Serialization;
 
 namespace Windchill
 {
-    public class DailyForecastRepository
+    public class DailyForecastRepository : IEnumerable
     {
         private List<DailyForecast> forecasts;
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return (IEnumerator) GetEnumerator();
+        }
+
+        public ForecastsEnum GetEnumerator()
+        {
+            return new ForecastsEnum(forecasts);
+        }
+        
 
         public DailyForecastRepository()
         {
