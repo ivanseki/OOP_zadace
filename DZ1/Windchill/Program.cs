@@ -191,7 +191,7 @@ namespace Windchill
             {
                 Console.WriteLine($"-> {dailyForecast.Weather.GetTemperature()}");
             }
-/*
+
             // Deep clone:
             DailyForecastRepository copy = new DailyForecastRepository(repository);
             Console.WriteLine($"Original repository:{Environment.NewLine}{repository}");
@@ -202,7 +202,6 @@ namespace Windchill
             
             Console.WriteLine($"Original repository:{Environment.NewLine}{repository}");
             Console.WriteLine($"Cloned repository:{Environment.NewLine}{copy}");
-*/
         }
     }
 }

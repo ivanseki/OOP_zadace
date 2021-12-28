@@ -2,8 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection.Metadata;
-using System.Xml.Serialization;
 
 namespace Windchill
 {
@@ -29,9 +27,10 @@ namespace Windchill
 
         public DailyForecastRepository(DailyForecastRepository repo) : this()
         {
-            foreach(DailyForecast forecast in forecasts)
+            foreach(DailyForecast forecast in repo.forecasts)
             {
                 DailyForecast copy = new DailyForecast(forecast.Day, forecast.Weather);
+                this.forecasts.Add(copy);
             }
         }
 
